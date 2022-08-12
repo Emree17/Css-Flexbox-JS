@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            display: flex;
+            justify-content: space-between;
+            background-color: crimson;
+            height: 70px;
+            align-items: center;
+            padding: 8px;
+        }
+        .hlink{
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        .imgd{
+            width: 230px;
+            border: 1px solid black;
+            border-radius: 30px;
+            margin: 10px;
+        }
+        .imgd img{
+            width: 100%;
+            border-radius: 30px 30px 0px 0px;
+        }
+        .imgd p{
+            padding: 0px 20px;
+        }
+        .fl{
+            display: flex;
+            justify-content: center;
+        }
+        input[type=text],
+        select{
+            width: 100%;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin: 6px 0px;
+            box-sizing: border-box;
+            border: 1px solid red;
+        }
+        input[type=submit]{
+            width: 100%;
+            padding: 12px 0px;
+            background-color: darkgreen;
+            border: none;
+            color: white;
+            margin-top: 22px;
+        }
+        input[type=text]:focus {
+            background-color: aqua;
+        }
+        input[type=text]:hover{
+            background-color: red;
+        }
+        .formgeneral{
+            background-color: lightgray;
+            margin: 150px 0px;
+            padding: 20px;
+            margin: 10px 280px;
+        }
+        .foote{
+            height: 50px;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mobilicon{
+            display: none;
+        }
+
+
+        @media screen and (max-width:600px) {
+            .mobilicon{
+            display: block;
+        }
+
+        .headerimg{
+            display: none;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="mobilicon" >
+            <img src="icon.jpg" width="50px" height="50px" alt="">
+        </div>
+        
+        <div>
+            <img class="headerimg" src="1.jpg" width="32px" height="32px" alt="">
+        </div>
+        
+        <div >
+            <a class="hlink" href="">Home</a>
+            <a class="hlink" href="">About</a>
+            <a class="hlink" href="">CN</a>
+        </div>
+    </div>
+
+    <div style="background-image: url('banner.jpg');height: 400px; position: relative; margin-bottom: 15px; "    >
+        <div style="text-align: center;  " >
+            <h3>Banner</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+        </div>
+    </div>
+
+    <div class="fl">
+    <div class="imgd" >
+        <img src="1.jpg" alt="">
+        <h3 style="text-align: center" >Resim</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis qui veritatis facere.</p>
+    </div>
+    <div class="imgd" >
+        <img src="2.jpg" alt="">
+        <h3 style="text-align: center" >Resim</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis qui veritatis facere.</p>
+    </div>
+    <div class="imgd" >
+        <img src="3.jpg" alt="">
+        <h3 style="text-align: center" >Resim</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis qui veritatis facere.</p>
+    </div>
+    <div class="imgd" >
+        <img src="4.jpg" alt="">
+        <h3 style="text-align: center" >Resim</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis qui veritatis facere.</p>
+    </div>
+</div>
+
+    <form class="formgeneral">
+        <label >Tc</label>
+        <input type="text" name="tc"
+        placeholder="Numaranızı Giriniz" >
+        <label >Ad</label>
+        <input type="text" name="firstname"
+        placeholder="Adınızı Giriniz">
+        <label >Soyad</label>
+        <input type="text" name="lastname"
+        placeholder="Soyadınızı Giriniz">
+        <select name="country" >
+            <option value="tr">Türkiye</option>
+            <option value="fr">Fransa</option>
+            <option value="en">İngiltere</option>
+        </select>
+        <input type="submit" value="Giriş">
+    </form>
+
+    <div class="foote" >
+        fr && Tüm Hakları Saklıdır
+    </div>
+    
+   
+    
+  
+</body>
+</html>
